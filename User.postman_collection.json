@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "0554d976-6d62-41e3-b04b-616f2f44e2b7",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8019/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8019",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8019/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8019",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"dni\":\"75856595\",\r\n    \"firstName\":\"Pedro\",\r\n    \"lastName\":\"Martinez\",\r\n    \"birthday\":\"12/12/1996\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8019/users/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8019",
+					"path": [
+						"users",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"dni\":\"75856595\",\r\n    \"firstName\":\"Pedro\",\r\n    \"lastName\":\"Martinez\",\r\n    \"birthday\":\"12/12/1996\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8019/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8019",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8019/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8019",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
