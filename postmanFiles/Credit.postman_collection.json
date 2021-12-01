@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "ff02ee9a-3f74-486d-800c-1e25d2630352",
-		"name": "Assignment",
+		"_postman_id": "4cb89f93-92ba-4f74-82c3-bb998434f955",
+		"name": "Credit",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -11,14 +11,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8008/assignments",
+					"raw": "http://localhost:8008/credits",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8008",
 					"path": [
-						"assignments"
+						"credits"
 					]
 				}
 			},
@@ -30,14 +30,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8008/assignments/1",
+					"raw": "http://localhost:8008/credits/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8008",
 					"path": [
-						"assignments",
+						"credits",
 						"1"
 					]
 				}
@@ -51,7 +51,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":\"1\",\r\n    \"idAccount\":\"1\",\r\n    \"idClient\":\"1\",\r\n    \"type\":\"T\"\r\n}",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"idCreditType\":\"2\",\r\n    \"idClient\":\"56\",\r\n    \"creditLimit\":\"4000\",\r\n    \"credit\":\"1256.47\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -59,14 +59,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8008/assignments/add",
+					"raw": "http://localhost:8008/credits/add",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8008",
 					"path": [
-						"assignments",
+						"credits",
 						"add"
 					]
 				}
@@ -80,7 +80,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":\"1\",\r\n    \"idAccount\":\"1\",\r\n    \"idClient\":\"1\",\r\n    \"type\":\"T\"\r\n}",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"idCreditType\":\"1\",\r\n    \"idClient\":\"56\",\r\n    \"creditLimit\":\"4000\",\r\n    \"credit\":\"1216.47\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -88,14 +88,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8008/assignments/1",
+					"raw": "http://localhost:8008/credits/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8008",
 					"path": [
-						"assignments",
+						"credits",
 						"1"
 					]
 				}
@@ -108,14 +108,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8008/assignments/1",
+					"raw": "http://localhost:8008/credits/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8008",
 					"path": [
-						"assignments",
+						"credits",
 						"1"
 					]
 				}
